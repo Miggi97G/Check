@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style/standard.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
 </head>
 
 <body onload="renderNotes()">
@@ -16,13 +17,13 @@
         <div class="header-app-name">
             <h1 class="app-name">CheckApp</h1>
         </div>
-        <input type="text" class="search-input" placeholder="Search notes...">
+        <div class="search-input-div">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
     </div>
-
 
     <div class="dashboard-container">
         <aside class="sidebar">
-
             <nav class="sidebar-nav">
                 <div class="sidebar-top">
                     <button class="add-btn"><span>+</span> New Note</button>
@@ -34,12 +35,15 @@
                 </div>
                 <a href="#" class="nav-item">Trash</a>
             </nav>
-
         </aside>
-
         <main class="main-content">
-            <h1></h1>
+
+            <divnote-content>
+                <h1>Test</h1>
+            </divnote-content>
         </main>
+
+
     </div>
 
 </body>
