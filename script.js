@@ -1,4 +1,4 @@
-let notes = [];
+let notes = ["Test"];
 
 function renderNotes() {
     const contentDiv = document.getElementById('content');

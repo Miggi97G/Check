@@ -27,7 +27,7 @@
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <div class="sidebar-top">
-                    <button class="add-btn"><span>+</span> New Note</button>
+                    <button onclick="myFunction()" class="add-btn" id="note_input"><span>+</span> New Note</button>
                 </div>
                 <div class="nav-content">
                     <a href="#" class="nav-item all-notes">All Notes</a>
@@ -38,7 +38,7 @@
             </nav>
         </aside>
 
-        <main class="main-content">
+        <main class="main-content" id="content">
             <div class="note-card">
                 <div class="note-header">
                     <h1>Note1</h1>
@@ -48,8 +48,8 @@
                 <div class="note-footer">
                     <span class="heart-icon">❤</span>
                     <div class="menu-button">
-                        <span>Span1</span>
-                        <span>span2</span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
