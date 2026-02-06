@@ -24,7 +24,22 @@ body {
     radial-gradient(at 0% 100%, hsla(339,49%,30%,1) 0, transparent 50%), 
     radial-gradient(at 50% 100%, hsla(225,39%,30%,1) 0, transparent 50%), 
     radial-gradient(at 100% 100%, hsla(253,16%,7%,1) 0, transparent 50%);
-  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    scrollbar-color: rgba(0,0,0,0.5) transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Hier definierst du die Farbe */
+    border-radius: 10px;                  /* Abrundung */
+    border: 4px solid transparent;        /* Erzeugt einen Abstand zum Rand */
+    background-clip: content-box;         /* Sorgt dafür, dass der Border sichtbar bleibt */
 }
 
 .app-name {
