@@ -1,7 +1,7 @@
-let notes = ["Test"];
+let notes = [];
 
 function renderNotes() {
-    const contentDiv = document.getElementById('content');
+    const contentDiv = document.getElementById('notesList');
     contentDiv.innerHTML = '';
     for (let indexNote = 0; indexNote < notes.length; indexNote++) {
         contentDiv.innerHTML += getNoteTemplate(indexNote);

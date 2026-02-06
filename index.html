@@ -39,53 +39,23 @@
             </nav>
         </aside>
 
-        <main class="main-content" id="content">
-            <div id="notesList" class="notes-container"></div>
+        <main class="main-content notes-container" id="notesList">
 
-            <div class="note-card">
-                <div class="note-header">
-                    <h1>Note1</h1>
-                    <p>Text</p>
-                </div>
-
-                <div class="note-footer">
-                    <span class="heart-icon">❤</span>
-                    <div class="menu-button">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-            <div class="note-card">
-                <div class="note-header">
-                    <h1>Note2</h1>
-                    <p>Text</p>
-                </div>
-
-                <div class="note-footer">
-                    <span class="heart-icon">❤</span>
-                    <div class="menu-button">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-            
         </main>
     </div>
 
     <div id="noteModal" class="modal-overlay">
-    <div class="modal-content">
-        <h2>Neue Notiz</h2>
-        <input type="text" id="inputTitle" placeholder="Titel der Notiz...">
-        <textarea id="inputText" placeholder="Inhalt..."></textarea>
-        
-        <div class="modal-actions">
-            <button onclick="closeModal()" class="btn-cancel">Abbrechen</button>
-            <button onclick="saveNote()" class="btn-save">Erstellen</button>
+        <div class="modal-content">
+            <h2>Neue Notiz</h2>
+            <input type="text" id="inputTitle" placeholder="Titel der Notiz...">
+            <textarea id="inputText" placeholder="Inhalt..."></textarea>
+
+            <div class="modal-actions">
+                <button onclick="closeModal()" class="btn-cancel">Abbrechen</button>
+                <button onclick="saveNote()" class="btn-save">Erstellen</button>
+            </div>
         </div>
     </div>
-</div>
 
 
 

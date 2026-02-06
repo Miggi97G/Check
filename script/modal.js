@@ -15,7 +15,7 @@ function saveNote() {
     const title = document.getElementById('inputTitle').value;
     const text = document.getElementById('inputText').value;
 
-    if (!title || !text) return alert("Bitte alles ausfüllen!");
+    if (!title) return alert("Bitte alles ausfüllen!");
 
     const notesList = document.getElementById('notesList');
 
@@ -38,20 +38,21 @@ function saveNote() {
     `;
 
     // Scroll-Logik an die neue Karte binden
-    addScrollBehavior(newNote);
+    //addScrollBehavior(newNote);
 
     notesList.appendChild(newNote);
     closeModal();
 }
 
 // Hilfsfunktion für den Scroll-Effekt
-function addScrollBehavior(element) {
-    let scrollTimeout;
-    element.addEventListener('scroll', () => {
-        element.classList.add('is-scrolling');
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            element.classList.remove('is-scrolling');
-        }, 800);
-    });
-}
+//function addScrollBehavior(element) {
+   // let scrollTimeout;
+    //element.addEventListener('scroll', () => {
+       // element.classList.add('is-scrolling');
+        //clearTimeout(scrollTimeout);
+       // scrollTimeout = setTimeout(() => {
+           // element.classList.remove('is-scrolling');
+      //  }, 800);
+   // });
+//}
+
